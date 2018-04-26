@@ -1,0 +1,12 @@
+#!/bin/sh
+# wrapper script for gas
+# Shows one screen of gas prices, highlighting words of interest.
+# You will likely want to customize grep's search terms.
+#
+#!/bin/sh
+
+# head -`expr $LINES - 1`
+gas |
+grep --color=always \
+'Marathon\|Shell\|Sunoco\|Wilson\|Broad\|3749 Twin Creeks Dr & Wilson Rd\|3911 Sullivant Ave & Holly Hill Dr\|3464 Sullivant Ave & Derrer Rd\|$'
+
