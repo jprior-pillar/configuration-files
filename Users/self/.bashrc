@@ -35,7 +35,7 @@ export COLUMNS
 EDITOR=vim
 export EDITOR
 # PAGER is convenient for wide queries in psql.
-PAGER='less -S'
+PAGER='less -FRSX'
 export PAGER
 alias c='calendar -A 7 -B 2'
 alias c='calendar -A 7'
