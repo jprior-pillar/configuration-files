@@ -28,6 +28,7 @@ PATH="${PATH}:${HOME}/bin"
 set -o vi
 alias ll='ls -l'
 alias lll='ls -l --full-time'
+alias ltr='ls -l -t -r'
 export LINES
 export COLUMNS
 # EDITOR value is for git.
