@@ -26,6 +26,7 @@
     lg = log --pretty=format:'%h %ad %s%Cred%d%Creset [%an]' --graph --date=iso --color=always
     lg = log --pretty=format:'%h %ad %s%d [%an]' --graph --date=iso
     lg = log --pretty=format:'%h %ad %s%d [%an]' --graph --date=format-local:'%Y-%m-%d %H:%M:%S'
+    lg = log --pretty=format:'%h %ad %s%Cred%d%Creset [%an]' --graph --date=format-local:'%Y-%m-%d %H:%M:%S' --color=always
     type = cat-file -t
     dump = cat-file -p
     df = diff --color
