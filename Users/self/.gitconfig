@@ -8,6 +8,9 @@
     safecrlf = true
     editor = vim
 
+[commit]
+    template = ~/.gitmessage
+
 [alias]
     o = checkout
     co = checkout
