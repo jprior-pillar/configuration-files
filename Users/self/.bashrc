@@ -22,9 +22,17 @@ export HISTCONTROL
 export HISTFILESIZE
 export HISTSIZE
 
-# Appending $HOME/bin to PATH is redundant on some systems,
-# but not all, so do it anyway.
-PATH="${PATH}:${HOME}/bin"
+append_to_path () {
+    for d in "$@"; do
+        if echo "${PATH}" | tr ':' '\n' | grep -q "^${d}$" -; then
+            :
+        else
+            PATH="${PATH}${PATH+:}${d}"
+        fi
+    done
+}
+append_to_path "${HOME}/bin"
+
 set -o vi
 alias ll='ls -l'
 alias lll='ls -l --full-time'
