@@ -35,7 +35,8 @@ append_to_path "${HOME}/bin"
 
 set -o vi
 alias ll='ls -l'
-alias lll='ls -l --full-time'
+alias lll='ls -l --full-time' ;# good on linux, but not macos
+alias lll='ls -l -T' ;# lame bsd
 alias ltr='ls -l -t -r'
 export LINES
 export COLUMNS
