@@ -31,5 +31,8 @@
     dump = cat-file -p
     df = diff --color
     dw = diff --color --word-diff
+    dc = diff --cached
     dm = difftool -t meld
     dy = difftool -t meld -y
+    credit = blame
+    cr = blame
