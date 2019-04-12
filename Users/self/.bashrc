@@ -1,5 +1,3 @@
-# .bashrc
-
 #!!!disabled to work on MacBook # Source global definitions
 #!!!disabled to work on MacBook if [ -f /etc/bashrc ]; then
 #!!!disabled to work on MacBook         echo november
