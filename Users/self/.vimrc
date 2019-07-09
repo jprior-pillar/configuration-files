@@ -28,7 +28,7 @@ set autoindent          " copy indent from current line when starting a new line
 syntax off
 
 " for pairing:
-" :set number
+:set number
 syntax on
 
 " au BufNewFile,BufRead *.js,*.javascript,*.es,*.jsx,*.mjs,*.ts   setf javascript
