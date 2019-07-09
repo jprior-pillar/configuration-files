@@ -48,9 +48,11 @@ function SetTabs()
   if &filetype == 'make' || &filetype == 'calendar'
     set tabstop=8 shiftwidth=8 softtabstop=8 noexpandtab
   elseif &filetype == 'javascript' || &filetype == 'html' || &filetype == 'ts' || &filetype == 'scss' || &filetype == 'css'
-    set shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+    " Note that this leaves existing tabs characters as is.
+    set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
   else
-    set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
+    " Note that this leaves existing tabs characters as is.
+    set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
   endif
 endfunction
 
