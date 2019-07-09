@@ -1,6 +1,7 @@
 [user]
     name = James Prior
-    email = jprior@pillartechnology.com
+    email = jim.prior@accenture.com
+    # email = jprior@pillartechnology.com
 
 [core]
     # for *nix operating systems
