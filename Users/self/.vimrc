@@ -46,7 +46,7 @@ syntax on
 
 function SetTabs()
   if &filetype == 'make' || &filetype == 'calendar'
-    set shiftwidth=8 tabstop=8 noexpandtab
+    set tabstop=8 shiftwidth=8 softtabstop=8 noexpandtab
   elseif &filetype == 'javascript' || &filetype == 'html' || &filetype == 'ts' || &filetype == 'scss' || &filetype == 'css'
     set shiftwidth=2 softtabstop=2 tabstop=2 expandtab
   else
