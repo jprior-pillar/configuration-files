@@ -18,13 +18,6 @@ set softtabstop=4       " number of spaces to represent tab
 set shiftwidth=4        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 
-" the following is for HTML / ecmascript
-" Note that it leaves existing tabs characters as is.
-" set expandtab           " enter spaces when tab is pressed
-" set softtabstop=2       " number of spaces to represent tab
-" set shiftwidth=2        " number of spaces to use for auto indent
-" set autoindent          " copy indent from current line when starting a new line
-
 syntax off
 
 " for pairing:
