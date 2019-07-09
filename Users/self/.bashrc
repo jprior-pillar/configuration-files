@@ -64,4 +64,5 @@ alias fa='git fetch --all'
 umask '0057'
 # PS1='\h:\W \u\$ ' # original
 PS1='\u@\h:\w\$ '
+PS1='j@j:\w\$ '
 export PS1
