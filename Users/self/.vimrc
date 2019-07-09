@@ -11,6 +11,8 @@ endfunction
 command! -nargs=1 SearchWord call SearchWord(<f-args>)
 nmap ? :SearchWord
 
+set encoding=utf-8
+
 " the following is probably best for my Python stuff
 " Note that it leaves existing tabs characters as is.
 set expandtab           " enter spaces when tab is pressed
