@@ -1,0 +1,14 @@
+#!/bin/sh
+
+d=`mktemp -d`
+echo "temporary directory is $d"
+
+find . -type f -exec md5sum {} \; >>"$d"/MD5SUMS &
+find . -type f -exec sha1sum {} \; >>"$d"/SHA1SUMS &
+find . -type f -exec sha256sum {} \; >>"$d"/SHA256SUMS &
+find . -type f -exec sha512sum {} \; >>"$d"/SHA512SUMS &
+find . -print0 | xargs -0 ls -l -T -d >>"$d"/find.-ls &
+
+wait
+mv "$d"/MD5SUMS "$d"/SHA1SUMS "$d"/SHA256SUMS "$d"/SHA512SUMS "$d"/find.-ls .
+rmdir "$d"
