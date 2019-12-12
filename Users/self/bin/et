@@ -1,0 +1,10 @@
+#!/bin/sh
+
+for filename in "$@"; do
+    new_filename=`echo "$filename" | tr ' A-Z' '-a-z'`
+    if [ "x$filename" != "x$new_filename" ]; then
+        t="$new_filename.whatever"
+        mv -n "$filename" "$t"
+        mv -n "$t" "$new_filename"
+    fi
+done
