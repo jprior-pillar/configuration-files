@@ -9,5 +9,5 @@
 date '+%Y-%m-%d %H:%M:%S'
 gas |
 grep --color=always \
-'Marathon\|Shell\|Sunoco\|Wilson\|Broad\|3749 Twin Creeks Dr & Wilson Rd\|3911 Sullivant Ave & Holly Hill Dr\|3464 Sullivant Ave & Derrer Rd\|$'
+'Marathon\|Shell\|Sunoco\|Wilson\|Broad\|4875 W Broad St & Woodlawn Ave\|2725 W Broad St & Harris Ave\|3911 Sullivant Ave & Holly Hill Dr\|3464 Sullivant Ave & Derrer Rd\|$'
 
