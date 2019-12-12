@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import os
+
+n_lines = int(os.environ['LINES'])
+n_columns = int(os.environ['COLUMNS'])
+
+line = '@' * n_columns
+page = '\n'.join([line] * n_lines)
+
+print(page)
