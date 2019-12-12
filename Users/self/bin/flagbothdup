@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "------------------ $1 $2"
+if cmp "$1" "$2"; then
+    echo same
+    mv -i "$1" "$1".duplicate
+    mv -i "$2" "$2".duplicate
+else
+    echo different
+fi
