@@ -1,6 +1,3 @@
 #!/bin/sh
 
-for repo in `git remote`; do
-    echo $repo
-    git fetch "$repo"
-done
+git fetch --all
