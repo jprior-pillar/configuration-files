@@ -58,6 +58,18 @@ endfunction
 
 autocmd BufRead,BufEnter * call SetTabs()
 
+function RemoveTrailingWhitespace()
+  if &filetype == 'markdown'
+    return
+  endif
+
+  let pos = getpos('.')
+  %s,\s\+$,,e
+  call setpos('.', pos)
+endfunction
+
+" autocmd BufWrite * call RemoveTrailingWhitespace()
+
 " highlight searches on Mac
 :set hls
 :hi Search ctermfg=0 ctermbg=3 
