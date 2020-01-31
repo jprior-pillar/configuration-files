@@ -63,6 +63,9 @@ alias fa='git fetch --all'
 
 # umask '0277'
 umask '0057'
+umask '0037'
+# umask '0027'
+# umask '0000' ;# for installing node.js
 # PS1='\h:\W \u\$ ' # original
 PS1='\u@\h:\w\$ '
 PS1='j@j:\w\$ '
