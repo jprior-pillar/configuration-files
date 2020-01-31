@@ -8,6 +8,7 @@
     autocrlf = input
     safecrlf = true
     editor = vim
+    excludesfile = ~/.gitignore
 
 [commit]
     template = ~/.gitmessage
