@@ -36,6 +36,7 @@ alias ll='ls -l'
 alias lll='ls -l --full-time' ;# good on linux, but not macos
 alias lll='ls -l -T' ;# lame bsd
 alias ltr='ls -l -t -r'
+alias hd='xxd -g 1 -u'
 export LINES
 export COLUMNS
 # EDITOR value is for git.
