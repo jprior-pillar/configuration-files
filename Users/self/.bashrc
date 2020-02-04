@@ -37,6 +37,7 @@ alias lll='ls -l --full-time' ;# good on linux, but not macos
 alias lll='ls -l -T' ;# lame bsd
 alias lll='gls -l --full-time' ;# brew install coreutils
 alias ltr='ls -l -t -r'
+alias ltra='ls -l -t -r -a'
 alias hd='xxd -g 1 -u'
 alias top='top -o cpu'
 
