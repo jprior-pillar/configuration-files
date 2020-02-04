@@ -53,6 +53,7 @@ alias c='calendar -A 7 -B 2'
 alias c='calendar -A 7'
 alias c='cal | grep -v "^ *$";calendar -A 7'
 alias d='date --iso-8601=ns'
+
 alias gl='git lg'
 alias gla='git lg --all'
 alias gl1='git lg --all -10'
